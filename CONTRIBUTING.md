@@ -16,7 +16,7 @@ How to add, edit, and ship knowledge so it stays accurate, lean, and safe to reu
 
 Anyone can contribute; nothing depends on a shared directory layout:
 
-1. **Clone** this repo anywhere: `git clone https://github.com/hallboys/acumatica-claude-kit`.
+1. **Clone** this repo anywhere: `git clone https://github.com/3eyedphish/acumatica-claude-kit`.
 2. *(Optional but recommended)* point your tools at it so you can capture from **any** session:
    add `export ACUMATICA_KIT_DIR="/your/path/to/acumatica-claude-kit"` to your shell profile
    (`~/.zshrc` / `~/.bashrc`).
