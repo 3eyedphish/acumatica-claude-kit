@@ -42,7 +42,7 @@ Then reload so the skill is active this session: `/reload-plugins` (or restart C
 
 **From a git host (teammates / other machines):**
 ```
-/plugin marketplace add hallboys/acumatica-claude-kit
+/plugin marketplace add 3eyedphish/acumatica-claude-kit
 /plugin install acumatica-claude-kit@acumatica-claude-kit
 ```
 
