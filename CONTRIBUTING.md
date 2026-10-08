@@ -54,6 +54,8 @@ plugins/acumatica/
     entities-actions.md
     giql-odata.md
     writes-idempotency.md
+    customization-projects.md
+    reports-dashboards.md
     reference-vs-tenant.md                    # the classification rule — read before editing
   skills/acumatica-learn/SKILL.md                       # the /acumatica-learn capture command
 ```
