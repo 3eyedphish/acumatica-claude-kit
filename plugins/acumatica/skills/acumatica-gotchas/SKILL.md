@@ -9,7 +9,9 @@ description: >-
   CannotOptimizeException, a write that returns 200 but silently does nothing,
   License_LoginLimitExceeded / session-limit errors, "input parsing" errors,
   empty GI/OData results, or account lockouts. Also use when deciding
-  GI-vs-contract-entity or reasoning about auth/session/seat behavior.
+  GI-vs-contract-entity or reasoning about auth/session/seat behavior, and when
+  building or publishing customization projects (DAC/graph extensions, custom
+  fields in the API) or reports, dashboards, pivot tables and reporting GIs.
 ---
 
 # Acumatica Integration Gotchas
@@ -56,6 +58,15 @@ shifts across releases, so an unverified claim is a hypothesis, not a fact.
   renames, @odata.nextLink paging, empty-result cache poisoning.
 - **[writes-idempotency.md](./writes-idempotency.md)** — the silent-200-on-revoked-write trap,
   endpoint detail collection-vs-object mapping, idempotency, operator attribution, money precision.
+- **[customization-projects.md](./customization-projects.md)** — publishing as an all-or-nothing merge
+  (an unselected project gets unpublished), site-wide code vs per-tenant data items, unpublish not
+  rolling back the database, the `Usr` prefix and DAC extension tables, custom fields invisible to
+  contract REST until the endpoint is extended (`$custom` for reads), `IsActive()`, base-delegate
+  overrides, pre-upgrade validation, locking out users while publishing.
+- **[reports-dashboards.md](./reports-dashboards.md)** — GI vs Report Designer vs ARM, matching the
+  Report Designer build to the instance, report versions and upgrades, reports/GIs as tenant data
+  (site map, unpublish), GI design for performance, dashboard widgets and pivot tables inheriting the
+  GI and the viewer's rights, keeping integration GIs separate from reporting GIs.
 - **[reference-vs-tenant.md](./reference-vs-tenant.md)** — the classification rule + a checklist
   of what is ALWAYS tenant-specific. Read this before adding an entry or porting a fact.
 

@@ -14,7 +14,8 @@ One plugin, **`acumatica`**, containing:
 
 - **`acumatica-gotchas`** skill — model-invoked whenever Claude works with Acumatica. An index
   ([SKILL.md](plugins/acumatica/skills/acumatica-gotchas/SKILL.md)) plus topic files:
-  auth/sessions/seats, entities/fields/actions, GIQL/OData, writes/idempotency, and the
+  auth/sessions/seats, entities/fields/actions, GIQL/OData, writes/idempotency, customization
+  projects, reports/dashboards/GI design, and the
   universal-vs-tenant classification rule.
 - **`/acumatica-learn`** command — user-invoked; captures a new lesson into the right topic file,
   correctly tagged and identifier-scrubbed.
